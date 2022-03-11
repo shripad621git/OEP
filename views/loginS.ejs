@@ -1,0 +1,33 @@
+<%- include("partials/header") -%>
+<div class="jumbotron centered"> 
+  <div class="container">
+   
+    <h1>Login</h1>
+
+         <img  class="image" src="https://tse3.mm.bing.net/th?id=OIP.t-ee1sZa3TZI6onT8lDuWQHaF-&pid=Api&P=0&w=188&h=152" alt="WCE"> 
+        <div class="card col-md-6">
+          <div class="card-body ">
+
+            <!-- Makes POST request to /login route -->
+            <form action="/loginS" method="POST">
+              <div class="form-group">
+                <label for="PRN">PRN No</label>
+                <input type="text" class="form-control" name="prn">
+              </div>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" name="Email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password">
+              </div>
+              
+              <button type="submit" class="btn btn-dark">Login</button>
+            </form>
+
+          </div>
+        </div>
+     
+  </div>
+</div>
